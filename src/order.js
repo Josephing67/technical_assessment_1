@@ -6,6 +6,22 @@
 */
 // Please write your code here
 
+// 1
+let ingredient = ["Beets","Carrots","Cabbage"];
+
+function addIngridients() {
+    for(let i = 0;i < ingredient.length; i++);
+    ingredient.push("Reddish");
+    console.log(ingredient)
+}
+addIngridients()
+
+// 2
+function addIngridients() {
+  let ingredient = ["Beets", "Carrots", "Cabbage"];
+  ingredient.push("Radish");
+  return ingredient;
+}
 
 
 
@@ -16,16 +32,15 @@
 
 // Please write your code here
 
+function formatPrice(price) {
+  console.log("$ " + price);
+}
+
+formatPrice(5);
 
 
 
 
-/* 5
-----Write a function called formatPrice that takes in a price
-----and returns a '$' in front of the price passed in
-*/
-
-// Please write your code here
 
 
 
@@ -38,6 +53,14 @@
 
 // Please write your code here
 
+function formatPrice(price, decrease, subtract) {
+  decrease = price / 10;
+  subtract = price - decrease;
+  console.log(subtract);
+}
+
+formatPrice(18.40);
+
 
 
 
@@ -48,6 +71,16 @@
 */
 
 // Please write your code here
+
+const orderArray = ["Beets", "Carrots", "Cabbage"];
+orderArray.length = 2;
+
+function takeOrder() {
+  orderArray.push("Radish");
+  console.log(orderArray + "\nHi, your order is limited to three items at a time."
+  );
+}
+takeOrder();
 
 
 
@@ -72,6 +105,22 @@
 ----Please be sure to not let the same ingredient be added on twice.
 */
 // Please write your code here
+
+const ingredients = [];
+const ingredientsNotAddTwice = [...new Set(ingredients)];
+
+function addIngridients(ingredient) {
+  ingredients.push(ingredient);
+  console.log(ingredientsNotAddTwice);
+}
+
+addIngridients("Beets");
+console.log(ingredients);
+addIngridients("Radish");
+console.log(ingredients);
+addIngridients("Beets");
+console.log(ingredients);
+console.log(ingredientsNotAddTwice);
 
 
 
@@ -101,3 +150,13 @@
 ----Write a function called searchOrder that takes in array of orders and
 ----a item. Your function should output if the item is included in the array of orders or not
 */
+
+storeItems = {
+  [Order:  "Dog"];
+  [Order1: "Cat"];
+  [Order2: "Snake"];
+};
+
+function searchOrder() {
+  
+}
